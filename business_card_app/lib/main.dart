@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
         alignment: Alignment.center,
         child: Stack(
           alignment: Alignment.center,
-          children: [_getCard()],
+          children: [_getCard(), _getAvatar()],
         ),
       ),
     );
@@ -55,6 +55,22 @@ class HomePage extends StatelessWidget {
             children: [Icon(Icons.person_outline), Text('Twitter: @jltzbrg')],
           )
         ],
+      ),
+    );
+  }
+
+  // Avatar
+  Container _getAvatar() {
+    return Container(
+      width: 100,
+      height: 100,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.all(Radius.circular(50.0)),
+        border: Border.all(color: Colors.redAccent, width: 1.2),
+        image: DecorationImage(
+            image: NetworkImage('https://picsum.photos/300/300'),
+            fit: BoxFit.cover),
       ),
     );
   }
