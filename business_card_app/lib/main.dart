@@ -43,7 +43,18 @@ class HomePage extends StatelessWidget {
       height: 200,
       decoration: BoxDecoration(
         color: Colors.amberAccent,
-        borderRadius: BorderRadius.circular(4.5),
+        borderRadius: BorderRadius.circular(14.5),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Julio Litzenberg'),
+          Text('Flutter Developer'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Icon(Icons.person_outline), Text('Twitter: @jltzbrg')],
+          )
+        ],
       ),
     );
   }
