@@ -1,2 +1,3 @@
-# flutter-portolio
-A collection of apps i build using Dart and Flutter SDK
+# Flutter Portolio
+A collection of apps build using Dart and Flutter SDK
+
